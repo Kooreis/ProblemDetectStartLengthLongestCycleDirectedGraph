@@ -1,15 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-public class Graph
-{
-    private int V;
-    private List<int>[] adj;
-
-    public Graph(int V)
+public void AddEdge(int v, int w)
     {
-        this.V = V;
-        adj = new List<int>[V];
-        for (int i = 0; i < V; i++)
-            adj[i] = new List<int>();
+        adj[v].Add(w);
     }
